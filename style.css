@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+.login-principal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff7a00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-esquerda{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.login-esquerda > h1{
+    color: white;
+    font-size: 2vw;
+    margin: 0%;
+}
+.imagem-login-esquerda{
+    width: 35vw;
+    justify-content: center;
+    align-items: center;    
+}
+.login-direita{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.login-dados{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #e67002;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #d86a04;
+}
+.login-dados > h1{
+    color: white;
+    font-weight: 800px;
+    margin: 0; 
+}
+.login-texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.login-texto > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background:#fa9434;
+    color: white;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #d86a04;
+    outline: none; 
+    box-sizing: border-box;
+}
+.login-texto > label{
+    color:white;
+    margin-bottom: 10px;
+}
+.login-texto > input::placeholder{
+    color: white;
+}
+.login-botao{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:white;
+    background: #ff7a00;
+    cursor: pointer;
+    box-shadow:0px 10px 40px -12px #d86a04;
+}
+@media only screen and (max-width:950px){
+    .login-dados {
+        width:85%
+    }
+}
+@media only screen and (max-width:950px){
+    .login-principal{
+        flex-direction: column;
+    }
+    .login-esquerda >h1{
+        display: none;
+    }
+    .login-esquerda{
+        width: 100%;
+        height: auto;
+    }
+    .login-direita{
+        width: 100%;
+        height: auto;
+    }
+    .imagem-login-esquerda{
+        width: 35vh;
+    }
+    .login-dados{
+       width: 90%; 
+    }
+}
